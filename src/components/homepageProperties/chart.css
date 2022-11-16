@@ -1,0 +1,198 @@
+@import url("https://unpkg.com/open-props");
+/* @import url("https://unpkg.com/open-props/normalize.min.css"); */
+
+
+.media-scroller::-webkit-scrollbar {
+    height: .8em;
+    width: 1rem;
+}
+
+.media-scroller::-webkit-scrollbar-track {
+    background: rgb(221, 212, 212);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 250);
+    border: 0.25em solid rgb(221, 212, 212);
+    border-radius: 100vw;
+}
+
+.media-scroller::-webkit-scrollbar-thumb:hover {
+    background: rgb(13, 0, 249);
+}
+
+.chart {
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.2);
+
+}
+
+.chartTitle {
+    margin-bottom: 20px;
+}
+
+.scrolling-wrapper {
+    width: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.media-scroller {
+    max-height: 200px;
+    min-height: 100px;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+
+    padding: 0 var(--size-3) var(--size-3);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
+
+.media-element {
+    display: grid;
+    height: fit-content;
+    grid-template-rows: min;
+    gap: var(--size-2);
+    padding: var(--size-3);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+}
+
+.propertyImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.propertyDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.propertyimgName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.propertyName {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.editPropertyIcon {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.editPropertyIcn{
+    font-size: 25px !important;
+    color: darkblue;
+}
+
+
+.propertyOccupancyDetails{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.editIconWidget{
+    display: flex;
+    flex-direction: column;
+    justify-content: "space-between";
+    align-items: center;
+}
+
+
+.widgetLgTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.widgetLgTable{
+    width: 100%;
+    border-spacing: 20px;
+
+}
+
+.propertiesLinkItem{
+    text-decoration: none;
+    color: inherit;
+}
+.widgetLgTr{
+    cursor: pointer;
+}
+
+.widgetLgTh{
+    text-align: left;
+}
+
+.widgetLgUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.widgetLgImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.widgetLgDate,.widgetLgAmount{
+    width: 40px;
+    font-weight: 300;
+}
+
+.widgetLgButton{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+}
+
+.widgetLgButton.Approved{
+    background-color: #e5faf2;
+    color: #3bb077;
+}
+
+.widgetLgButton.Declined{
+    background-color: #fff0f1;
+    color: #d95097;
+}
+
+.widgetLgButton.Pending{
+    background-color: #ebf1fe;
+    color: #2a7ade;
+}

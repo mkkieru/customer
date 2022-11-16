@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}
+
+.container{
+  display: flex;
+}
+.App{
+  flex-grow: 1;
+}
+
+
+
+/*  Test notifications*/
+
